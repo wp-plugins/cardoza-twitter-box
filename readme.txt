@@ -26,7 +26,7 @@ For more visit: http://fingerfish.com/cardoza-twitter-box/
 1. Download the plugin.
 2. Upload to your blog (/wp-content/plugins/).
 3. Activate it.
-4. Click the Cardoza Twitter Box.
+4. Click the Twitter Box.
 5. Fill in the options.
 6. Then go to widget and drag and drop Cardoza's Twitter Box in the area you want to display the plugin.
 
