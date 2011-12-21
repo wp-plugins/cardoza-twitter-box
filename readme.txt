@@ -15,7 +15,7 @@ Cardoza Twitter Box is a Widgets let you display Twitter updates on your website
 1. Display your most recent Twitter updates on any webpage.
 2. Select width and height of the widget in the options.
 3. Live stream with loop facility.
-4. Background & Foregraound color selection.
+4. Background & Foreground color selection.
 
 If you have any suggestions or feedback, please post it in the following link.
 
