@@ -1,4 +1,4 @@
-=== Cardoza Twitter Like Box ===
+=== Cardoza Twitter Box ===
 Contributors: Vinoj Cardoza
 Tags: twitter, profile, box
 Requires at least: 3.0
