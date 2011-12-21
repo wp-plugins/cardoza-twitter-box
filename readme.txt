@@ -19,7 +19,7 @@ Cardoza Twitter Box is a Widgets let you display Twitter updates on your website
 
 If you have any suggestions or feedback, please post it in the following link.
 
-For more visit: http://fingerfish.com/cardoza-facebook-like-box/
+For more visit: http://fingerfish.com/cardoza-twitter-box/
 
 == Installation ==
 
