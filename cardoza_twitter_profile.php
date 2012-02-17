@@ -1,9 +1,9 @@
 <?php
    /*
    Plugin Name: Cardoza Twitter Box
-   Plugin URI: http://fingerfish.com/cardoza-twitter-box/ ?
+   Plugin URI: http://fingerfish.com/cardoza-twitter-box/
    Description: Cardoza Twitter Box enables you to display the tweets in your website.
-   Version: 1.0
+   Version: 1.1
    Author: Vinoj Cardoza
    Author URI: http://fingerfish.com/about-me/
    License: GPL2
@@ -37,5 +37,40 @@ function cardoza_twitter_box_init(){
 	register_sidebar_widget(__('Cardoza\'s Twitter Box'), 'widget_cardoza_twitter_box');
 }
 
-
+function cardoza_twitter_box_sc(){
+    ob_start();
+    $option_value = ctb_retrieve_options($opt_val);
+	?>
+	<script>
+	new TWTR.Widget({
+		version: 2,
+	  	type: 'profile',
+		rpp: <?php echo $option_value['ctb_no_of_tweets'];?>,
+	  	interval: <?php echo $option_value['ctb_no_of_tweets']*1000;?>,
+	  	width: <?php echo $option_value['ctb_width'];?>,
+	  	height: <?php echo $option_value['ctb_height'];?>,
+	  	theme: {
+		shell: {
+		  background: '<?php echo $option_value['ctb_shell_bg_color'];?>',
+		  color: '<?php echo $option_value['ctb_shell_text_color'];?>'
+		},
+		tweets: {
+		  background: '<?php echo $option_value['ctb_tweet_bg_color'];?>',
+		  color: '<?php echo $option_value['ctb_tweet_text_color'];?>',
+		  links: '<?php echo $option_value['ctb_links_color'];?>'
+		}
+	  },
+	  features: {
+		scrollbar: <?php echo $option_value['ctb_scrollbar'];?>,
+		loop: <?php echo $option_value['ctb_loop_results'];?>,
+		live: <?php echo $option_value['ctb_live'];?>,
+		behavior: '<?php echo $option_value['ctb_behavior'];?>'
+	  }
+	}).render().setUser('<?php echo $option_value['ctb_username'];?>').start();
+	</script>
+<?php
+    $output = ob_get_contents();
+    ob_end_clean();
+    return $output;
+}
 ?>
