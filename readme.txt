@@ -2,7 +2,7 @@
 Contributors: Vinoj Cardoza
 Tags: twitter, profile, box
 Requires at least: 3.0
-Tested up to: 3.3
+Tested up to: 3.3.1
 Stable tag: trunk
 License: GPLv2 or later
 
@@ -16,6 +16,10 @@ Cardoza Twitter Box is a Widgets let you display Twitter updates on your website
 2. Select width and height of the widget in the options.
 3. Live stream with loop facility.
 4. Background & Foreground color selection.
+5. Display your twitter messages on any page or post.
+
+= Version 1.1 (Date updated: 17-02-2012) =
+Sort code added to display the twitter box on any page or post.
 
 If you have any suggestions or feedback, please post it in the following link.
 
@@ -40,6 +44,12 @@ Uninstalling is as simple as deactivating the plugin.
 2. screenshot-2.gif
 
 == Frequently Asked Questions ==
+= How do I add twitter box in my post or page? =
+Just copy the following shortcode and paste it on the page or post you want to display it.
+[cardoza_twitter_box]
 
 if you have any queries post it at http://fingerfish.com/cardoza-twitter-box/
 
+== Change Log ==
+= Version 1.1 (Date updated: 17-02-2012) =
+# A minor bug to display the twitter box on the pages and posts sorted out.
