@@ -3,7 +3,7 @@
    Plugin Name: Cardoza Twitter Box
    Plugin URI: http://fingerfish.com/cardoza-twitter-box/
    Description: Cardoza Twitter Box enables you to display the tweets in your website.
-   Version: 1.1
+   Version: 1.2
    Author: Vinoj Cardoza
    Author URI: http://fingerfish.com/about-me/
    License: GPL2
@@ -29,7 +29,7 @@ function cardoza_twitter_box_options(){
 		'manage_options', 
 		'slug_for_twitter_box', 
 		'cardoza_twitter_box_options_page',
-		plugin_dir_url(__FILE__).'includes/Vinoj.jpg');
+		plugin_dir_url(__FILE__).'includes/twitter.png');
 }
 
 
