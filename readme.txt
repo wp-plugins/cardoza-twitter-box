@@ -1,5 +1,6 @@
 === Cardoza Twitter Box ===
-Contributors: Vinoj Cardoza
+Contributors: vinoj.cardoza
+Donate link: http://www.fingerfish.com/
 Tags: twitter, profile, box
 Requires at least: 3.0
 Tested up to: 3.3.1
