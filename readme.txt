@@ -1,6 +1,6 @@
 === Twitter Tweets Box ===
 Contributors: vinoj.cardoza
-Donate link: http://www.fingerfish.com/
+Donate link: http://www.vinojcardoza.com/
 Tags: twitter, profile, box
 Requires at least: 3.0
 Tested up to: 3.3.1
@@ -21,7 +21,7 @@ Twitter Tweets Box is a Widgets let you display Twitter updates on your website.
 
 If you have any suggestions or feedback, please post it in the following link.
 
-For more visit: http://fingerfish.com/cardoza-twitter-box/
+For more visit: http://www.vinojcardoza.com/cardoza-twitter-box/
 
 == Installation ==
 
@@ -46,7 +46,7 @@ Uninstalling is as simple as deactivating the plugin.
 Just copy the following shortcode and paste it on the page or post you want to display it.
 [cardoza_twitter_box]
 
-if you have any queries post it at http://fingerfish.com/cardoza-twitter-box/
+if you have any queries post it at http://www.vinojcardoza.com/cardoza-twitter-box/
 
 == Change Log ==
 = Version 1.3 (Date updated: 04-07-2012) =

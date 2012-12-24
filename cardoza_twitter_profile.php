@@ -1,11 +1,11 @@
 <?php
    /*
    Plugin Name: Twitter Tweets Box
-   Plugin URI: http://fingerfish.com/cardoza-twitter-box/
+   Plugin URI: http://www.vinojcardoza.com/cardoza-twitter-box/
    Description: Twitter Tweets Box enables you to display the tweets in your website.
    Version: 1.3
    Author: Vinoj Cardoza
-   Author URI: http://fingerfish.com/about-me/
+   Author URI: http://www.vinojcardoza.com/about-me/
    License: GPL2
    */
    
