@@ -3,7 +3,7 @@ Contributors: vinoj.cardoza
 Donate link: http://www.vinojcardoza.com/
 Tags: twitter, profile, box
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.5
 Stable tag: trunk
 License: GPLv2 or later
 
