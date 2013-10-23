@@ -20,7 +20,7 @@ Twitter Tweets Box is a Widgets let you display Twitter updates on your website.
 
 = Support = 
 
-Thanks for downloading and installing my plugin. You can show your appreciation and support future development by donating or by clicking the ads in support page.
+Thanks for downloading and installing my plugin. You can show your appreciation and support future development by donating.
 
 Support page: http://www.vinojcardoza.com/blog/cardoza-twitter-box/
 
