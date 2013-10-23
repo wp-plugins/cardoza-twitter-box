@@ -2,21 +2,13 @@
 /* Function to retrieve the options value from the database*/
 function ctb_retrieve_options($opt_val){
 	$opt_val = array(
-			'ctb_title' => stripslashes(get_option('cardoza_tb_title')),
-			'ctb_username' => stripslashes(get_option('cardoza_tb_username')),
-			'ctb_scrollbar' => stripslashes(get_option('cardoza_tb_scrollbar')),
-			'ctb_live' => stripslashes(get_option('cardoza_tb_live')),
-			'ctb_behavior' => stripslashes(get_option('cardoza_tb_behavior')),
-			'ctb_loop_results' => stripslashes(get_option('cardoza_tb_loop_results')),
-			'ctb_tweet_interval' => stripslashes(get_option('cardoza_tb_tweet_interval')),
-			'ctb_no_of_tweets' => stripslashes(get_option('cardoza_tb_no_of_tweets')),
-			'ctb_shell_bg_color' => stripslashes(get_option('cardoza_tb_shell_bg_color')),
-			'ctb_shell_text_color' => stripslashes(get_option('cardoza_tb_shell_text_color')),
-			'ctb_tweet_bg_color' => stripslashes(get_option('cardoza_tb_tweet_bg_color')),
-			'ctb_tweet_text_color' => stripslashes(get_option('cardoza_tb_tweet_text_color')),
-			'ctb_links_color' => stripslashes(get_option('cardoza_tb_links_color')),
-			'ctb_width' => stripslashes(get_option('cardoza_tb_width')),
-			'ctb_height' => stripslashes(get_option('cardoza_tb_height')),
+		'ctb_title' => stripslashes(get_option('cardoza_tb_title')),
+		'ctb_username' => stripslashes(get_option('cardoza_tb_username')),
+		'ctb_user_widget_id' => stripslashes(get_option('cardoza_tb_user_widget_id')),
+		'ctb_width' => stripslashes(get_option('cardoza_tb_width')),
+		'ctb_height' => stripslashes(get_option('cardoza_tb_height')),
+		'ctb_links_color' => stripslashes(get_option('cardoza_tb_links_color')),
+		'ctb_theme' => stripslashes(get_option('cardoza_tb_theme'))
 	); 
 	return $opt_val;
 }
@@ -29,35 +21,22 @@ function widget_cardoza_twitter_box($args){
 	if(empty($option_value['ctb_title'])) $option_value['ctb_title'] = "Twitter";
 	echo $option_value['ctb_title'];
 	echo $after_title;
+	$username = get_option('cardoza_tb_username');
+	$user_widget_id = get_option('cardoza_tb_user_widget_id');
+	$width = get_option('cardoza_tb_width');
+	$height = get_option('cardoza_tb_height');
+	$links_color = get_option('cardoza_tb_links_color');
+	$theme = get_option('cardoza_tb_theme');
+	
+	echo '<a class="twitter-timeline"  href="https://twitter.com/'.$username.'"  data-widget-id="'.$user_widget_id.'"';
+	if(!empty($width)) echo ' width="'.$width.'"';
+	if(!empty($height)) echo ' height="'.$height.'"';
+	if(!empty($links_color)) echo ' data-link-color="'.$links_color.'"';
+	if(!empty($theme) && $theme == 'dark') echo ' data-theme="dark"';
+	echo '>Tweets by @'.$username.'</a>';
 	?>
-	<script>
-	new TWTR.Widget({
-		version: 2,
-	  	type: 'profile',
-		rpp: <?php echo $option_value['ctb_no_of_tweets'];?>,
-	  	interval: <?php echo $option_value['ctb_no_of_tweets']*1000;?>,
-	  	width: <?php echo $option_value['ctb_width'];?>,
-	  	height: <?php echo $option_value['ctb_height'];?>,
-	  	theme: {
-		shell: {
-		  background: '<?php echo $option_value['ctb_shell_bg_color'];?>',
-		  color: '<?php echo $option_value['ctb_shell_text_color'];?>'
-		},
-		tweets: {
-		  background: '<?php echo $option_value['ctb_tweet_bg_color'];?>',
-		  color: '<?php echo $option_value['ctb_tweet_text_color'];?>',
-		  links: '<?php echo $option_value['ctb_links_color'];?>'
-		}
-	  },
-	  features: {
-		scrollbar: true,
-		loop: true,
-		live: <?php echo $option_value['ctb_live'];?>,
-		behavior: '<?php echo $option_value['ctb_behavior'];?>'
-	  }
-	}).render().setUser('<?php echo $option_value['ctb_username'];?>').start();
-	</script>
-<?php
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<?php
 	global $wpdb;
 	echo $after_widget;
 }
