@@ -4,7 +4,7 @@ Donate link: http://www.vinojcardoza.com/
 Tags: twitter, profile, box, tweets, user, time line, user time line, twitter time line, twitter user time line, twitter user tweets, live tweets, live twitter tweets,
 twitter live tweets
 Requires at least: 3.0
-Tested up to: 3.6.1
+Tested up to: 4.1.1
 Stable tag: trunk
 License: GPLv2 or later
 
@@ -52,11 +52,15 @@ Just copy the following shortcode and paste it on the page or post you want to d
 Support page: http://www.vinojcardoza.com/blog/cardoza-twitter-box/
 
 == Change Log ==
+
+= Version 1.5 =
+* Tested compatibility with Wordpress 4.1.1.
+
 = Version 1.4 =
-Updated to support the latest Twitter API.
+* Updated to support the latest Twitter API.
 
 = Version 1.3 =
-# Cardoza Twitter Box renamed to Twitter Tweets Box.
+* Cardoza Twitter Box renamed to Twitter Tweets Box.
 
 = Version 1.1 =
-# A minor bug to display the twitter box on the pages and posts sorted out.
+* A minor bug to display the twitter box on the pages and posts sorted out.

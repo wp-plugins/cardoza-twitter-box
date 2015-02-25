@@ -3,7 +3,7 @@
    Plugin Name: Twitter Tweets Box
    Plugin URI: http://www.vinojcardoza.com/blog/cardoza-twitter-box/
    Description: Twitter Tweets Box enables you to display the tweets in your website.
-   Version: 1.4
+   Version: 1.5
    Author: Vinoj Cardoza
    Author URI: http://www.vinojcardoza.com/
    License: GPL2
