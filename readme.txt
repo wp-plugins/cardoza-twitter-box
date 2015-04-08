@@ -24,6 +24,10 @@ Thanks for downloading and installing my plugin. You can show your appreciation 
 
 Support page: http://www.vinojcardoza.com/blog/cardoza-twitter-box/
 
+= Languages =
+1. French
+2. Serbian (Translated by Andrijana Nikolic)
+
 == Installation ==
 
 1. Download the plugin.
@@ -52,6 +56,10 @@ Just copy the following shortcode and paste it on the page or post you want to d
 Support page: http://www.vinojcardoza.com/blog/cardoza-twitter-box/
 
 == Change Log ==
+
+= Version 1.6 =
+* French translation added.
+* Serbian translation added.
 
 = Version 1.5 =
 * Tested compatibility with Wordpress 4.1.1.
